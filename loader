@@ -1,0 +1,1 @@
+local a="https://raw.githubusercontent.com/AreWeDeadas/AutoFarm/refs/heads/main/autofarm"local b=game:GetService("Players").LocalPlayer;b.OnTeleport:Connect(function(c)if c==Enum.TeleportState.Started then queue_on_teleport(string.format('loadstring(game:HttpGet("%s"))()',a))end end)loadstring(game:HttpGet(a))()
